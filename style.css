@@ -1,4 +1,4 @@
-/* Step 1: readable base. Every page shares this. */
+/* Readable base. Every page shares this. */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f7f4ef;
@@ -18,7 +18,7 @@ a {
   color: #6b3e26;
 }
 
-/* Step 2: the <nav> at the bottom of every page. */
+/* <nav> at the bottom of every page. */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -39,4 +39,93 @@ nav a {
 
 nav img {
   display: block;
+}
+
+/* divs and hrs */
+body > div {
+  margin: 1.25rem 0;
+  padding: 0.25rem 1.25rem 1rem;
+  background-color: #fff;
+}
+
+body > div > a {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e4d9cc;
+  margin: 1.25rem 0;
+}
+
+/* cafes and happy-hours are different structurally right now, preliminary design before I make them more consistent. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  background-color: #fff;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e4d9cc;
+}
+
+th {
+  background-color: #efe6da;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+.hh-intro {
+  margin: 1.25rem 0;
+  padding: 0.25rem 1.25rem 1rem;
+  background-color: #fff;
+}
+
+.hh-grid {
+  list-style: none;
+  margin: 1.25rem 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.hh-card {
+  background-color: #fff;
+  padding: 0.25rem 1.25rem 1rem;
+  border: 1px solid #e4d9cc;
+}
+
+.hh-card h3 {
+  margin: 0.75rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e4d9cc;
+}
+
+.hh-card dl {
+  margin: 0;
+}
+
+.hh-card dt {
+  font-weight: bold;
+  margin-top: 0.75rem;
+}
+
+.hh-card dd {
+  margin: 0.15rem 0 0;
+}
+
+.hh-card ul {
+  margin: 0.15rem 0 0;
+  padding-left: 1.2rem;
+}
+
+address {
+  font-style: normal;
 }
