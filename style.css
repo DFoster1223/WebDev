@@ -25,7 +25,7 @@ nav {
   gap: 0.75rem;
   margin-top: 2rem;
   padding: 0.75rem;
-  background-color: #efe6da;
+  background-color: #a9846a;
 }
 
 nav a {
@@ -128,4 +128,17 @@ td:first-child {
 
 address {
   font-style: normal;
+}
+
+/* Step 3: image style format */
+#image {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 24px;
+  padding: 4px;
+  background-color: #a9846a;
+  border: 2px dotted #6b3e26;
+  border-radius: 8px;
 }
