@@ -93,6 +93,7 @@ td:first-child {
   margin: 1.25rem 0;
   padding: 0;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
 }
 
@@ -130,7 +131,7 @@ address {
   font-style: normal;
 }
 
-/* Step 3: image style format */
+/* image style format */
 #image {
   display: block;
   width: 300px;
@@ -141,4 +142,37 @@ address {
   background-color: #a9846a;
   border: 2px dotted #6b3e26;
   border-radius: 8px;
+}
+
+/* Pictures shrink with the page. Nav icons stay small because their HTML width is 20. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet: 768px wide and below. One column of cards, less page padding. */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .hh-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Phone: 480px wide and below. Nav stacks, table scrolls sideways instead of spilling off. */
+@media (max-width: 480px) {
+  body {
+    padding: 0.75rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }
