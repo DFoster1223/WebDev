@@ -17,3 +17,26 @@ h3 {
 a {
   color: #6b3e26;
 }
+
+/* Step 2: the <nav> at the bottom of every page. */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  background-color: #efe6da;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.7rem;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+nav img {
+  display: block;
+}
